@@ -1,10 +1,13 @@
 // Webpack configuration
 // https://webpack.js.org/configuration/
 
+const usingGithubPages = true;
+
 const path = require('path');
 const HtmlWebpackPlugin = require('html-webpack-plugin');
 const MiniCssExtractPlugin = require('mini-css-extract-plugin');
 const CssMinimizerPlugin = require("css-minimizer-webpack-plugin");
+const outputDir = usingGithubPages ? 'docs' : 'dist';
 
 const isProduction = process.env.NODE_ENV == 'production';
 
@@ -20,7 +23,7 @@ const config = {
     },
     output: {
         filename: 'static/scripts/[name].js',
-        path: path.resolve(__dirname, 'dist'),
+        path: path.resolve(__dirname, outputDir),
         clean: true,
     },
     devServer: {

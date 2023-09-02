@@ -1,0 +1,1 @@
+(()=>{var e=localStorage.getItem("value");null!=e?(e=Number(e),e++):e=1,localStorage.setItem("value",String(e)),console.log(e)})();

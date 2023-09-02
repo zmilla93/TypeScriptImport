@@ -1,1 +1,1 @@
-(()=>{"use strict";document.getElementById("glCanvas").getContext("webgl2")})();
+document.getElementById("glCanvas").getContext("webgl2");

@@ -20,6 +20,7 @@ const config = {
     entry: {
         'index': './src/index.ts',
         'game': './src/game.ts',
+        'storage': './src/storage.ts',
     },
     output: {
         filename: 'static/scripts/[name].js',

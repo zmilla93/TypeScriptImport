@@ -1,0 +1,24 @@
+{
+  "devDependencies": {
+    "@webpack-cli/generators": "^3.0.7",
+    "html-webpack-plugin": "^5.5.3",
+    "prettier": "^3.0.2",
+    "ts-loader": "^9.4.4",
+    "typescript": "^5.2.2",
+    "webpack": "^5.88.2",
+    "webpack-cli": "^5.1.4",
+    "webpack-dev-server": "^4.15.1"
+  },
+  "version": "1.0.0",
+  "description": "My webpack project",
+  "name": "my-webpack-project",
+  "private": true,
+  "scripts": {
+    "build": "webpack --mode=production --node-env=production",
+    "build:dev": "webpack --mode=development",
+    "build:prod": "webpack --mode=production --node-env=production",
+    "watch": "webpack --watch",
+    "start": "webpack serve --open",
+    "serve": "webpack serve --no-open"
+  }
+}
